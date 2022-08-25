@@ -1,0 +1,23 @@
+void selectionSort(vector<int> & arr)
+{
+	int pos, min, i;
+
+	for (pos = 0; pos < 30; ++pos)
+	{
+		min = arr[pos];
+
+		for (i = arr[pos + 1]; i < arr[30]; ++i)
+		{
+			if (i < min)
+			{
+				min = i;
+			}
+		}
+
+		if (min != pos)
+		{
+			std::swap(arr.at(min), arr.at(pos));
+
+		}
+	}
+}
